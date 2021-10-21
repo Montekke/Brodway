@@ -1,0 +1,50 @@
+  <section class="section-24">
+    <div class="container">
+      <div class="final-form">
+        <div class="info">
+          <img src="img/info.svg" alt="">
+          <span>
+            Предупредим вас, <br>
+            если места начнут <br>
+            заканчиваться
+          </span>
+        </div>
+        <form class="needs-validation" novalidate="" method="POST" action="#" enctype="multipart/form-data"
+          name="addcom6" id="addcom6" onsubmit="return false">
+          <div class="h3">
+            Не забудьте <br>
+            зафиксировать <br>
+            место на любую из <br>
+            смен уже сегодня
+          </div>
+          <div class="h4">
+            <b>Это бесплатно</b> и ни к чему <br>
+            вас не обязывает
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput3">Введите ваш номер телефона:</label>
+            <input type="tel" placeholder="+7 (___)___-__-__" name="phone" id="formGroupExampleInput3"
+              class="input js_input js_tel form-control" required="">
+          </div>
+          <input type="hidden" name="from" value="Зафиксировать место на смену">
+          <div class="err" id="cerror6"></div>
+          <button class="main-btn" onclick="doLoad6(document.getElementById('addcom6'))">
+            Зафиксировать место на смену
+          </button>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" checked="" id="exampleCheck6">
+            <label class="form-check-label" for="exampleCheck6">Я принимаю <a data-bs-toggle="modal"
+                data-bs-target="#security-politics">условия передачи данных</a></label>
+          </div>
+        </form>
+        <div class="manager">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="img/mob2.png" alt="">
+            <div>
+              Менеджер перезвонит в течение 10 минут <br> для уточнении бронируемой смены
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

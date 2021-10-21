@@ -1,0 +1,234 @@
+header {
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+
+  .map {
+    margin-left: 7.5%;
+    margin-right: 8.1%;
+
+    img {
+      margin-right: 15px;
+    }
+
+    .li {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 22px;
+
+      &:first-child {
+        margin-bottom: 8px;
+      }
+
+      &:before {
+        content: '';
+        width: 4px;
+        height: 4px;
+        background-color: #4896ff;
+        display: inline-block;
+        border-radius: 100%;
+        margin-right: 7px;
+        margin-bottom: 2px;
+      }
+    }
+  }
+
+  .phone {
+    color: #13151a;
+    font-size: 26px;
+    line-height: 28px;
+
+    a {
+      color: #fff;
+      font-size: 24px;
+    }
+  }
+
+  .online {
+    color: rgba(255, 255, 255, .7);
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: flex-end;
+    margin-top: 5px;
+
+    .pulse {
+      width: 6px;
+      height: 6px;
+      background-color: #91d166;
+      border-radius: 50%;
+      left: 46px;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: pulse;
+      animation-name: pulse;
+      -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-font-smoothing: antialiased;
+      opacity: 1;
+      float: left;
+      margin-right: 11px;
+    }
+  }
+
+  .head-btn {
+    width: 200px;
+    height: 56px;
+    border: 1px solid #ffffffb3;
+    background: transparent;
+    color: #ffffffb3;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: .44px;
+    border-radius: 28px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 20px 40px rgba(28, 110, 217, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.3);
+      background-image: linear-gradient(to top, #0761d7 0%, #4f9bff 99%, #4f9bff 100%);
+      border-radius: 28px;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    &:hover:before {
+      opacity: 1;
+      transition: opacity 0.3s linear;
+    }
+
+    &:hover {
+      border: none;
+      color: #fff;
+    }
+  }
+
+  @include _1400 {
+    .top-header {
+      align-items: start !important;
+
+      .phone-block {
+        flex-direction: column;
+
+        .head-btn {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  @include _992 {
+    .top-header {
+      .phone-block {
+        flex-direction: row;
+
+        .head-btn {
+          margin-top: 0;
+        }
+      }
+
+      .map {
+        display: none !important;
+      }
+    }
+  }
+
+  @include _768 {
+    .top-header {
+      .phone-block {
+        flex-direction: column;
+
+        .head-btn {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  @include _576 {
+    .phone {
+      a {
+        font-size: 18px;
+      }
+    }
+
+    .top-header {
+      .phone-block {
+        .head-btn {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  @include _460 {
+    .top-header {
+      a {
+        img {
+          width: 100%;
+        }
+      }
+
+      .phone-block {
+        margin-left: 25px;
+
+        .head-btn {
+          margin-top: 10px;
+          width: 180px;
+          height: 46px;
+        }
+      }
+    }
+  }
+
+  @include _375 {
+    .phone a {
+      font-size: 16px;
+    }
+
+    .online {
+      color: rgba(255, 255, 255, .7);
+      font-size: 12px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      justify-content: flex-end;
+      margin-top: 5px;
+    }
+
+    .top-header .phone-block .head-btn {
+      margin-top: 10px;
+      width: 146px;
+      height: 40px;
+      font-size: 10px;
+    }
+
+    .top-header .phone-block {
+      margin-left: 25px;
+    }
+  }
+}

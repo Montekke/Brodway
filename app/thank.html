@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+
+@include('parts/head.html')
+
+<body>
+  @include('parts/header.html')
+  <main>
+    <div class="thank-1 position-relative">
+      <div class="container">
+        <h1>Спасибо за доверие!</h1>
+        <a class="present-btn" target="_blank"
+          href="https://drive.google.com/file/d/1RmTdL19tCPrTgw7Fu3i1X9O2OrFy5_WG/view">Открыть
+          презентацию</a>
+        <p>Пока вы ждете звонка нашего менеджера<br>
+          <span>посмотрите 2-минутное видео о том,</span> как дети<br>
+          проводят время в нашем лагере</p>
+        <div class="block-video position-relative">
+          <a fancybox="gallery" href="https://youtu.be/45mSyTtMNHs?t=185">
+            <picture>
+              <source srcset="img/video_pc.webp" type="image/webp">
+              <img src="img/video_pc.png" alt="">
+            </picture>
+            <button class="btn main-btn position-absolute">
+              <img src="img/play.svg" alt="">
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="dimm">
+        <picture>
+          <source srcset="img/harry.webp" type="image/webp">
+          <img src="img/harry.png">
+        </picture>
+      </div>
+    </div>
+    <section class="thank-2 position-relative">
+      <picture class="pult position-absolute">
+        <source srcset="img/pult.webp" type="image/webp">
+        <img src="img/pult.png" alt="">
+      </picture>
+      <div class="container">
+        <div class="soc-block">
+          <h3>Остались вопросы по лагерю?
+            <div class="h2">Подпишитесь на нашего бота-помощника в соц. сетях
+              и получите ответ на любой вопросы</div>
+          </h3>
+          <div class="soc-button d-flex align-items-center justify-content-between">
+            <div class="vk-b d-flex justify-content-center align-items-center">
+              <img src="img/vk.svg" alt="">
+              <p>Вконтакте</p>
+            </div>
+            <div class="fb-b d-flex justify-content-center align-items-center">
+              <img src="img/fb.svg" alt="">
+              <p>Facebook</p>
+            </div>
+            <div class="vb-b d-flex justify-content-center align-items-center">
+              <img src="img/viber.svg" alt="">
+              <p>Viber</p>
+            </div>
+            <div class="tg-b d-flex justify-content-center align-items-center">
+              <img src="img/telega.svg" alt="">
+              <p>Telegram</p>
+            </div>
+          </div>
+        </div>
+        <h2>Подписывайтесь на наши социальные сети
+          <div class="h2">и следите за жизнью лагеря, новыми программами и выгодными предложениями</div>
+        </h2>
+        <div class="connect-block d-flex align-items-end justify-content-between">
+          <div class="connect-item d-flex flex-column align-items-center">
+            <picture>
+              <source srcset="img/vk_pc.webp" type="image/webp">
+              <img src="img/vk_pc.png" alt="">
+            </picture>
+            <a class="vk_b">Перейти в группу <img src="img/vk.svg" alt=""></a>
+          </div>
+          <div class="connect-item d-flex flex-column align-items-center">
+            <picture>
+              <source srcset="img/youtube_pc.webp" type="image/webp">
+              <img src="img/youtube_pc.png" alt="">
+            </picture>
+            <a class="you_b">Перейти на <img src="img/youtube.svg" alt=""> канал</a>
+          </div>
+          <div class="connect-item d-flex flex-column align-items-center">
+            <picture>
+              <source srcset="img/insta_pc.webp" type="image/webp">
+              <img src="img/insta_pc.png" alt="">
+            </picture>
+            <a class="inst_b">Перейти в <img src="img/insta.svg" alt=""> акканут</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('parts/footer.html')
+
+  @include('parts/modal.html')
+  @include('parts/_politic.html')
+
+  @include('parts/scripts.html')
+</body>
+
+</html>

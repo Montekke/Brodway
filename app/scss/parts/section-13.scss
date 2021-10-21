@@ -1,0 +1,102 @@
+.section-13 {
+  margin-top: -508px;
+  background-image: url('../img/bg-people.jpg');
+  padding-top: 578px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 120px;
+
+  .btn-block {
+    padding-bottom: 764px;
+
+    a {
+      display: none;
+    }
+
+    .photo,
+    .video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff !important;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      padding: 25px 60px;
+      box-shadow: 0 30px 60px rgba(201, 214, 255, 0.2),
+        inset 0 0 15px rgba(255, 255, 255, 0.3);
+      border-radius: 48px;
+      background-image: linear-gradient(to top, #737c99 0%, #cfd7e6 99%, #cfd7e6 100%);
+      margin-right: 40px;
+      position: relative;
+      z-index: 1;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        box-shadow: 0 30px 60px rgba(201, 214, 255, 0.2),
+          inset 0 0 15px rgba(255, 255, 255, 0.3);
+        border-radius: 48px;
+        background-image: linear-gradient(to top, #8691b3 0%, #dae3f2 100%);
+        opacity: 0;
+        transition: opacity 0.3s linear;
+      }
+
+      &:hover:before {
+        opacity: 1;
+      }
+
+      &:active {
+        background-image: linear-gradient(to top, #737c99 0%, #cfd7e6 99%, #cfd7e6 100%);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
+
+
+  .main-btn {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    width: 472px;
+    height: 104px;
+    border-radius: 52px;
+  }
+
+  @include _768 {
+    .btn-block {
+      flex-direction: column;
+
+      a {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .video {
+        margin-top: 30px;
+        margin-right: 0;
+      }
+    }
+  }
+
+  @include _460 {
+    padding-bottom: 70px;
+  }
+
+  @include _375 {
+    .btn-block a {
+      padding: 25px 20px;
+    }
+  }
+}

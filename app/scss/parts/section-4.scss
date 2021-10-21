@@ -1,0 +1,183 @@
+.section-4,
+#presentation {
+  padding-top: 130px;
+  z-index: 7;
+  background-image: url('../img/form-bg2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+
+  .container {
+    z-index: 2;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
+
+  .present {
+    flex-wrap: wrap;
+    padding-right: 20px;
+
+    .present-block {
+      margin-bottom: 40px;
+
+      picture {
+        margin-right: 21px;
+        min-width: 42px;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+      }
+
+      &:nth-child(2),
+      &:nth-child(4) {
+        margin-left: -57px;
+      }
+    }
+  }
+
+  .pres-pic {
+    position: absolute;
+    bottom: -359px;
+    left: -388px;
+
+    .pdf {
+      width: 110px;
+      height: 110px;
+      background-color: #ffffff;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 59px;
+      left: 450px;
+    }
+
+    picture img {
+      width: 1644px;
+    }
+  }
+
+  .form {
+    max-width: 448px;
+    min-width: 448px;
+    box-shadow: 0 40px 80px rgb(0 0 0 / 4%);
+    border-radius: 16px;
+    background-color: #ffffff;
+    padding: 40px;
+    padding-top: 50px;
+    margin-bottom: 120px;
+    right: -24px;
+
+    h4 {
+      color: #0f1013;
+      font-size: 40px;
+      @extend %bold;
+      line-height: 46px;
+      text-align: left;
+      margin-bottom: 35px;
+    }
+
+    .h4 {
+      color: #0f1013;
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 15px;
+      font-weight: 400;
+    }
+
+    .form-block-input {
+      input {
+        border-radius: 45px;
+        margin-top: 15px;
+        width: 100%;
+        height: 90px;
+        font-size: 18px;
+      }
+    }
+
+    .main-btn {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 96px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 18px;
+      border-radius: 48px;
+    }
+  }
+
+  @include _1200 {
+    .consult {
+      flex-direction: column;
+
+      .present {
+        padding-right: 0;
+        width: 100%;
+      }
+
+      .pres-pic {
+        bottom: -189px;
+        left: -359px;
+      }
+    }
+  }
+
+  @include _768 {
+    .present {
+      &-block {
+        width: 100% !important;
+        margin-left: 0 !important;
+
+        h3 {
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @include _576 {
+    .pres-pic {
+      display: none;
+    }
+
+    .form {
+      width: 100%;
+      right: 0;
+    }
+  }
+
+  @include _460 {
+    padding-top: 70px;
+
+    .consult {
+      .form {
+        padding: 20px;
+        min-width: unset;
+        max-width: 100%;
+        margin-bottom: 70px;
+
+        h4 {
+          font-size: 32px;
+          line-height: 38px;
+        }
+
+        .h4 {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+
+  }
+}

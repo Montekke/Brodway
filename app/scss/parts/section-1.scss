@@ -1,0 +1,175 @@
+.section-1 {
+  background-image: url('../img/header-bg.jpg');
+  padding-top: 191px;
+  background-repeat: no-repeat;
+  padding-bottom: 323px;
+  background-position: top center;
+  overflow: hidden;
+  color: #fff;
+
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 58px;
+  }
+
+  p {
+    margin-top: 27px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 23px;
+  }
+
+  ul {
+    display: flex;
+    margin-bottom: 60px;
+
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 26px;
+      margin-right: 33px;
+
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .main-btn {
+    width: 472px;
+    height: 104px;
+    border-radius: 52px;
+    font-size: 18px;
+    font-size: bold;
+    line-height: 26px;
+  }
+
+  @include _992 {
+    background-position: 0% 50%;
+    padding-bottom: 150px;
+
+    h1 {
+      br {
+        display: none;
+      }
+    }
+
+    ul {
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+
+      li {
+        margin-right: 0;
+        width: 50%;
+        margin-bottom: 30px;
+
+        picture {
+          min-width: 60px;
+
+          img {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @include _576 {
+    background-position: 0% 10%;
+    background-size: inherit;
+    padding-bottom: 100px;
+
+    h1 {
+      font-size: 42px;
+      line-height: 52px;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 34px;
+
+      br {
+        display: none;
+      }
+    }
+
+    .main-btn {
+      width: 100%;
+    }
+  }
+
+  @include _460 {
+
+
+    h1 {
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 32px;
+    }
+
+    ul {
+      li {
+        font-size: 18px;
+
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          img {
+
+            width: 100%;
+          }
+        }
+
+        picture {
+          min-width: 45px;
+          max-width: 45px;
+
+          margin-right: 10px;
+
+        }
+      }
+    }
+  }
+
+  @include _410 {
+    h1 {
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
+
+  @include _375 {
+    h1 {
+      font-size: 28px;
+      line-height: 38px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    ul li {
+      font-size: 18px;
+      width: 100%;
+
+      br {
+        display: none;
+      }
+    }
+
+    ul li picture {
+      min-width: 45px;
+      max-width: 45px;
+      margin-right: 25px;
+    }
+
+  }
+}

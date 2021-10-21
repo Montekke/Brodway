@@ -1,0 +1,157 @@
+.section-15 {
+  h2 {
+    margin-bottom: 57px;
+  }
+
+  padding-top: 105px;
+  padding-bottom: 120px;
+
+  .pic-block {
+    color: #fff;
+
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 32px;
+    }
+
+    ul {
+      li {
+        position: relative;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top: 10px;
+        padding-left: 14px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          background-color: #fec400;
+          border-radius: 50%;
+          left: 0;
+          top: 13px;
+        }
+      }
+    }
+
+    .horizontal {
+      margin-left: 30px;
+
+      .block1 {
+        margin-bottom: 30px;
+
+        div {
+          padding-left: 52px;
+          padding-top: 99px;
+        }
+      }
+
+      .block2 {
+        div {
+          padding-top: 79px;
+          padding-left: 51px;
+        }
+
+      }
+
+      .block3 {
+        margin-top: 30px;
+      }
+    }
+
+    .vertical {
+
+
+      div {
+        padding-left: 51px;
+        padding-top: 50px;
+      }
+
+      .section-4 .vertical li {
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #fff;
+      }
+    }
+  }
+
+  @include _1200 {
+    .pic-block {
+      flex-direction: column;
+      align-items: center !important;
+
+      .horizontal {
+        margin-left: 0;
+      }
+
+      .vertical {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @include _768 {
+    .pic-block {
+
+      .vertical,
+      .horizontal {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .horizontal {
+
+        .block1,
+        .block2 {
+          div {
+            padding-left: 33px;
+            padding-top: 35px;
+          }
+        }
+      }
+    }
+  }
+
+  @include _576 {
+    .pic-block {
+      color: $black;
+
+      .position-absolute {
+        position: relative !important;
+        padding: 0 !important;
+
+        h3 {
+          br {
+            display: none;
+          }
+        }
+      }
+
+      picture {
+        margin-top: 20px;
+      }
+
+      .vertical,
+      .horizontal .block1 {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  @include _410 {
+    .pic-block {
+      h3 {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+
+}

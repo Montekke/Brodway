@@ -1,0 +1,154 @@
+.section-22 {
+  padding-top: 110px;
+
+  h2 {
+    margin-bottom: 52px;
+  }
+
+  .block5,
+  .bot2 {
+
+    .icon2 {
+      margin-right: 11px;
+      margin-top: -1px;
+    }
+
+    .inf3 {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      margin-top: -3px;
+
+      span {
+        color: rgb(#13141c, 0.5);
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .52px;
+
+      }
+
+      .phone {
+        color: $black;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 28px;
+      }
+    }
+
+    .emaill {
+      position: relative;
+      left: -12px;
+
+      .mail {
+        color: #4896ff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        display: inline-block;
+        border-bottom: 1px solid rgba(#4896ff, .3);
+
+        &:hover {
+          color: #3174cc;
+
+        }
+      }
+    }
+
+
+  }
+
+  @include _1400 {
+
+    .block5,
+    .bot2 {
+      .inf3 {
+        font-size: 16px;
+
+        .phone {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  @include _1200 {
+
+    .block5,
+    .bot2 {
+      .icon2 {
+        margin-left: 3px;
+      }
+
+      .inf3 {
+        div {
+          br {
+            display: none;
+          }
+        }
+
+        .phone {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  @include _992 {
+
+    .block5,
+    .bot2 {
+      flex-wrap: wrap;
+
+      .icon2 {
+        margin-left: 0;
+      }
+
+      .col-md-4,
+      .col-md-3,
+      .p5 {
+        padding: 0;
+        width: 47%;
+      }
+
+      .telphone {
+        width: 100%;
+      }
+    }
+
+    .bot2 {
+      margin: 0;
+      margin-top: 20px;
+
+      .emaill {
+        margin: 0;
+        margin-right: -9px;
+      }
+    }
+  }
+
+  @include _576 {
+
+    .block5,
+    .bot2 {
+      flex-wrap: wrap;
+
+      .col-md-4,
+      .col-md-3,
+      .p5 {
+        padding: 0;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .emaill {
+        left: 0;
+      }
+
+    }
+  }
+
+  @include _460 {
+    padding-top: 70px;
+  }
+}

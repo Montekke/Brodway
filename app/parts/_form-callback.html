@@ -1,0 +1,67 @@
+<div class="modal-form">
+  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+    <img src="img/close.svg" alt="">
+  </button>
+  <div class="d-flex formm align-items-center">
+    <div class="left-modal">
+      <div class="name">
+        Александра Арбенина
+      </div>
+      <span>
+        Главный менеджер лагеря «Мюзикл»
+      </span>
+    </div>
+    <div class="right-modal">
+      <div class="form relative">
+        <div class="bordered">
+          <h4>Закажите <br> обратный звонок</h4>
+          <div>Наш специалист свяжется с вами <br> в течение 5 минут удобным для вас <br> способом
+          </div>
+          <form class="needs-validation" novalidate="" method="POST" action="#" enctype="multipart/form-data"
+            name="addcom" id="addcom" onsubmit="return false">
+            <h6>Выберите способ связи:</h6>
+            <div class="socials d-flex align-items-center">
+              <div class="soc sms active" data-sposob="Позвонить">
+                <div class="round2">
+                  <img class=" lazyloaded" loading="auto" alt="" src="img/phone2.svg">
+                </div>
+                <span>Позвонить</span>
+              </div>
+              <div class="soc whats" data-sposob="WhatsApp">
+                <div class="round2">
+                  <img class=" lazyloaded" loading="auto" alt="" src="img/whatsapp.svg">
+                </div>
+                <span>WhatsApp</span>
+              </div>
+              <div class="soc viber" data-sposob="Viber">
+                <div class="round2">
+                  <img class=" lazyloaded" loading="auto" alt="" src="img/viber.svg">
+                </div>
+                <span>Viber</span>
+              </div>
+              <div class="soc telega" data-sposob="Telegram">
+                <div class="round2">
+                  <img class=" lazyloaded" loading="auto" alt="" src="img/telegram.svg">
+                </div>
+                <span>Telegram</span>
+              </div>
+            </div>
+            <span class="span">введите ваш номер телефона:</span>
+            <input type="tel" placeholder="+7 (___)___-__-__" name="phone" class="input js_input js_tel form-control"
+              required="">
+            <input type="hidden" name="from" value="Заказать обратный звонок">
+            <input type="hidden" name="sposob" class="sposob" value="Позвонить">
+            <div class="err" id="cerror"></div>
+            <button onclick="doLoad(document.getElementById('addcom'))" class="main-btn">Заказать обратный
+              звонок</button>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" checked="" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Я принимаю <a data-bs-toggle="modal"
+                  data-bs-target="#security-politics">условия передачи данных</a></label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,243 @@
+.section-24 {
+  background-image: url(../img/form-bg222.jpg);
+  display: flex;
+  align-items: center;
+  background-position: 50% 0%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .final-form {
+    width: 476px;
+    height: auto;
+    box-shadow: 0 40px 80px rgb(0 0 0 / 5%);
+    border-radius: 14px;
+    background-color: #ffffff;
+    position: relative;
+    float: right;
+    padding: 0 50px;
+    padding-top: 55px;
+    padding-bottom: 10px;
+
+    .info {
+      height: 200px;
+      background-color: #f7f8fa;
+      border-radius: 100%;
+      width: 200px;
+      padding-top: 39px;
+      text-align: center;
+      position: absolute;
+      left: -181px;
+      top: 164px;
+
+
+      &:before {
+        content: '';
+        border: 20px solid transparent;
+        border-left: 20px solid #f7f8fa;
+        position: absolute;
+        right: -34px;
+        top: 42%;
+      }
+
+      img {
+        display: block;
+        margin-bottom: 13px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      span {
+        font-size: 14px;
+      }
+    }
+
+    form {
+      .h3 {
+        color: #000000;
+        font-size: 38px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 46px;
+      }
+
+      .h4 {
+        margin-top: 15px;
+        color: #000000;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 32px;
+      }
+
+      .main-btn {
+        @extend %w-100;
+        height: 104px;
+        border-radius: 52px;
+        font-size: 16px;
+        @extend %bold;
+        margin-bottom: 7px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+        margin-top: 28px;
+
+        label {
+          color: #a6a6a6;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 28px;
+          text-align: left;
+          text-transform: uppercase;
+          font-style: normal;
+          letter-spacing: 0.28px;
+        }
+
+        input {
+          @extend %w-100;
+          margin-top: 10px;
+          height: 96px;
+          border-radius: 55px;
+          border: 1px solid #ededed;
+          background-color: #fafbfc;
+          color: #cccccc;
+          font-size: 18px;
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: 28px;
+          padding-left: 43px;
+        }
+      }
+    }
+
+    .manager {
+      width: 464px;
+      height: 109px;
+      border-radius: 14px;
+      background-color: #f7f8fa;
+      margin-left: -40px;
+      margin-top: 15px;
+
+      img {
+        margin-left: -75px;
+        margin-top: -17px;
+      }
+
+      div {
+        padding-left: 17px;
+      }
+
+      .d-flex div {
+        margin-top: -25px;
+        margin-left: 10px;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 24px;
+      }
+    }
+  }
+
+  @include _1200 {
+    .final-form {
+      .manager {
+        width: 456px;
+      }
+    }
+  }
+
+  @include _768 {
+    .final-form {
+      .info {
+        display: none;
+      }
+    }
+  }
+
+  @include _576 {
+    .final-form {
+      width: 100%;
+
+      form {
+        .h3 {
+          font-size: 32px;
+          line-height: 42px;
+
+          br {
+            display: none;
+          }
+        }
+      }
+
+      .manager {
+        width: calc(100% + 81px);
+      }
+
+    }
+  }
+
+  @include _460 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .final-form {
+      padding: 30px;
+      padding-bottom: 7px;
+
+      form {
+        .h3 {
+          font-size: 26px;
+          line-height: 36px;
+        }
+      }
+
+      .manager {
+        width: calc(100% + 62px);
+        padding-right: 15px;
+
+        img {
+          margin-left: -65px;
+        }
+
+        div {
+          font-size: 14px !important;
+          line-height: 24px !important;
+          margin-left: 0 !important;
+
+          br {
+            display: none;
+          }
+        }
+      }
+
+    }
+  }
+
+  @include _410 {
+    .final-form {
+      padding: 20px;
+      padding-bottom: 10px;
+
+      .h4 {
+        br {
+          display: none;
+        }
+      }
+
+      .manager {
+        width: calc(100% + 52px);
+
+        img {
+          margin-left: -55px;
+        }
+      }
+    }
+  }
+}
